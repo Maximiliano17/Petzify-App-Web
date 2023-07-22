@@ -101,9 +101,13 @@
     font-size: 12px;
 }
 
-.campos button{
+.button_acceso{
     width: 80%;
     height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     border-radius: 50px;
     border-style: none;
     background: green;
