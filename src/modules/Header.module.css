@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    border-bottom: solid 1px #ccc;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.opciones{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_acceso {
+    width: 50%;
+    height: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px;
+    border-style: none;
+    background: green;
+    color:white;
+    font-size: 15px;
+}
+
+.nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:.5rem;
+    list-style: none;
+    font-size: 12px;
+}  
+
+.nav li:hover{
+    border-bottom: 1px solid #5b5959;
+}
+
+.item{
+    color: #5b5959;
+    text-decoration: none;
+}
+ 
+.buscador{
+    width: 50%;
+    height: 2rem;
+    background: #f5f2f2;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/*None*/
+
+.button_acceso_responsive{
+    display: none;
+}
+
+.buscador_responsive{
+    display: none;
+}
+
+.burger{
+    display: none;
+}
+
+@media(max-width: 1000px){
+
+    .nav ul{
+        gap:1rem;
+    }
+
+    .button_acceso_responsive{
+        display: flex;
+    }
+
+    .button_acceso{
+        display: none;
+    }
+    
+    
+}
+
+@media(max-width: 720px){
+
+      .burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .logo{
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .buscador{
+        width: 60%;
+     }
+
+      .nav{
+        display: none;
+      }
+
+       .opciones{
+        display: none;
+       }
+}
