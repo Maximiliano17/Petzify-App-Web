@@ -17,7 +17,7 @@
     width: 20%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -73,7 +73,7 @@
 }  
 
 .nav li:hover{
-    border-bottom: 1px solid #5b5959;
+    border-bottom: 1px solid green;
 }
 
 .item{
@@ -82,8 +82,8 @@
 }
  
 .buscador{
-    width: 50%;
-    height: 2rem;
+    width: 70%;
+    height: 2rem;   
     background: #f5f2f2;
     border: solid 1px #ccc;
     border-radius: 5px;
@@ -110,6 +110,14 @@
         gap:1rem;
     }
 
+     .opciones{
+        width: 10%;
+     }
+
+     .logo{
+        width: 30%;
+     }
+     
     .button_acceso_responsive{
         display: flex;
     }
