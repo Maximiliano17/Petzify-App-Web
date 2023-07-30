@@ -96,7 +96,7 @@
 
 .opciones{
    width: 70%;
-   height: 70%;
+   height: 60%;
 }
 
 .posteo{
@@ -125,23 +125,32 @@
 
     .midsection{
         width: 60%;
-
     }
 
     .rightsection{
         display: none;
     }
 }
-
+ 
 @media(max-width:720px){
 
     .midsection{
         width: 100%;
     }
-
         
     .crearpublicacion{
-        width: 350px;
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .filtros{
+        width: 100%;
+        height: 100px;
+    }
+
+    .opciones{
+        width: 50%;
+        height: 40%;
     }
 
     .posteo{
