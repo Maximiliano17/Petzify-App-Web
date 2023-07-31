@@ -1,13 +1,17 @@
 //Componentes
 import Header from "../components/Header"
+import SimpleMap from "./Maps"
 //Styles
 import styles from "../modules/Home.module.css"
 //Imagenes
 import foto from "../assets/img/logo.png"
+import perfil from "../assets/img/perfil.png"
+import banner from "../assets/img/banner.jpeg"
 //Librerias
 import SwitchSelector from "react-switch-selector";
-
+ 
 function Home() {
+  
   const options = [
     {
         label: <span>Seguidos</span>,
@@ -37,10 +41,40 @@ function Home() {
        <div className={styles.conteiner}> 
          <section className={styles.leftsection}>
            <div className={styles.perfilinfo}>
-             
+             <div className={styles.banner}>
+               <img src={banner} alt="Banner" />
+             </div>
+             <div className={styles.info}>
+
+             <img src={perfil} alt="Foto" className={styles.fotoperfil} />
+
+              <p>
+                +
+              </p>
+              <p>
+                +
+              </p>
+              <p>
+                +
+              </p>
+
+             </div>
+           
+             <div className={styles.informacion}>
+              <h3>Carlos Acuña</h3>
+              
+              <button>
+              Seguir
+              </button>
+             </div> 
+
+
            </div>
-           <div className={styles.mapinfo}>
-            
+           <div className={styles.perfilmascota}>
+
+           </div>
+           <div className={styles.maps2}>
+             <SimpleMap />
             </div>
          </section>
          <section className={styles.midsection}>
@@ -67,7 +101,7 @@ function Home() {
              </div>
          </section>
         <section className={styles.rightsection}>
-
+           <SimpleMap />
          </section>
        </div>
     </>

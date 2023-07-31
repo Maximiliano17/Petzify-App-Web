@@ -25,20 +25,82 @@
 
 .perfilinfo{
     width: 100%;
-    height: 40%;
+    height: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; 
-    background: blue;
+    flex-direction: column;
+    background: white;
+    border:solid 1px #ccc;
 }
 
-.mapinfo{
+.perfilmascota{
     width: 100%;
     height: 40%;
     display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-direction: column;
+    background: none;
+}
+
+.banner{
+    width: 90%;
+    height: 50%;
+    display: flex;
     justify-content: center;
     align-items: center; 
-    background: blue;
+    position: relative;
+    border:solid 1px #ccc;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.info{ 
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    position: relative;
+    z-index: 1;
+    border:solid 1px #ccc;
+}
+
+.informacion{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-direction: column;
+    border:solid 1px #ccc;
+}
+
+.informacion h3{
+    color: #5b5959;
+}
+
+.informacion button{
+    width: 30%;
+    height: 1.5rem;
+    border-style: none;
+    border-radius: 100px;
+    border:solid 1px green;
+    background: green;
+    color:white;
+}
+
+.fotoperfil{
+    width: 70px;
+    height: 70px;
+    border-radius:100%;
+}
+
+.maps2{
+  display: none;
 }
 
 /*Medio*/
@@ -113,10 +175,23 @@
     display: flex;
     justify-content:center;
     align-items: center; 
-    background: red;
+    background: white;
+    border:solid 1px #ccc;
+}
+
+.mapa{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
 }
 
 @media(max-width:1000px){
+
+    .perfilmascota{
+        display: none;
+    }
 
     .leftsection{
         width: 30%;
@@ -130,6 +205,17 @@
     .rightsection{
         display: none;
     }
+
+    .maps2{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background: white;
+        border:solid 1px #ccc;
+    }
+
 }
  
 @media(max-width:720px){
