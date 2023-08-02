@@ -42,7 +42,7 @@ function Home() {
          <section className={styles.leftsection}>
            <div className={styles.perfilinfo}>
              <div className={styles.banner}>
-               <img src={banner} alt="Banner" />
+               <img src={banner} alt="Banner" /> 
              </div>
              <div className={styles.info}>
 
