@@ -8,29 +8,40 @@ import celular from "../assets/img/celular_fondo.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import axios from "axios";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const saveToken = async (token) => {
+    await localStorage.setItem("Token", token);
+    try {
+      window.location.href = "/home"; 
+    } catch (error) {
+      console.log(error);
+    }
+    
+
+  };
+
   // https://petzify.up.railway.app/api/v1/auth/profile
   const handleSubmit = (e) => {
-
     e.preventDefault();
 
     axios
       .post("https://petzify.up.railway.app/api/v1/auth/signin", {
         username,
-        password
+        password,
       })
       .then(function (response) {
-        // handle success
-        console.log(response);
+        let token = response.data.token;
+        saveToken(token);
       })
       .catch(function (error) {
-        // handle error
         console.log(error);
-      })
+        alert("Usuario no encontrado");
+      });
   };
 
   return (
