@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background: #f1eded;
+}
+
+.perfil{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    border-radius: 20px;
+    background: #fff;  
+    border:solid 1px #ccc;
+}
+
+.bannersection{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerimagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerimagen img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px  0 0; 
+}
+
+.fotoperfil{
+    width: 20%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    bottom: -60px; 
+}
+
+.fotoperfil img{
+    height: 100%;
+    border:solid 1px #ccc;
+    border-radius: 100%; 
+}
+
+.informacionperfil{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nombreperro{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.informacionperfil h2{
+    font-size: 20px;
+}
+
+.informacionperfil p{
+    color: #5b5959;
+}
+
+.datos{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.datosdelperro{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posteos{
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+    background: #fff;   
+    border:solid 1px #ccc;
+}
+
+.button{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button button{
+    width: 30%;
+    height: 3rem;
+    border-style: none;
+    background: green;
+    border-radius: 20px;
+}

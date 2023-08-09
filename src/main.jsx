@@ -8,6 +8,7 @@ import {
 //Componentes
 import Home from './pages/Home.jsx';
 import App from './App.jsx'
+import Mimascota from './pages/Mimascota.jsx';
 
 //Rutas
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   { 
     path: "/home",
     element: <Home />,
+  },
+  { 
+    path: "/mascota",
+    element: <Mimascota />,
   },
 ]);
 
